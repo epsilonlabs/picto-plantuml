@@ -1,0 +1,12 @@
+<?nsuri minisd?>
+<?render-plantuml minisd2plantuml.egl?>
+<model>
+	<participant name="Bob"/>
+	<participant name="Alice"/>
+	
+	<interaction from="Bob" to="Alice" 
+		message="Authentication request"/>
+	<interaction from="Alice" to="Bob" 
+		message="Authentication response"/>
+	
+</model>

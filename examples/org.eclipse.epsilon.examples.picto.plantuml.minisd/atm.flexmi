@@ -1,12 +1,12 @@
 <?nsuri minisd?>
 <?render-plantuml minisd2plantuml.egl?>
 <model>
-	<participant name="Bob"/>
-	<participant name="Alice"/>
+	<participant name="Customer"/>
+	<participant name="ATM"/>
 	
-	<interaction from="Bob" to="Alice" 
-		message="Authentication request"/>
-	<interaction from="Alice" to="Bob" 
-		message="Authentication response"/>
+	<interaction from="Customer" to="ATM" 
+		message="Insert card"/>
+	<interaction from="ATM" to="Customer" 
+		message="Request PIN"/>
 	
 </model>
